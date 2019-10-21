@@ -2,7 +2,14 @@ body {
     margin: 0px;
  }
 
-
+.wraper {
+    border-color: #d35400;
+    background-color: #FFBBE7;
+    color: #333333;
+    padding: 5px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 100%;
+    }
 
 .right-col {
     float: right;
@@ -15,25 +22,17 @@ body {
 .center-col {
     display: flex;
     flex-direction: column;
-
 }
 
 .header {
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
     text-align: center;
-    padding: 1px;
-    grid-area: header;
-}
+    padding: 10px;
+   }
 
 .footer {
     grid-area: footer;
 }
 
 
-.container {
-    font-family: 'Oxygen', sans-serif;
-    border-color: #d35400;
-    background-color: #FFFFFF;
-    color: #333333;
-    padding: 10px;
-    font-size: 100%;
-}
