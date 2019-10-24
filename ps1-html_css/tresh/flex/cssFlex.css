@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+}
+.mainWraper {
+    display: flex;
+    /*перенос блоков если не лезет в строку*/
+    flex-wrap: wrap;
+    /*блоки симетрично*/
+    justify-content: space-around;
+    border: red 1px solid;
+    margin: 0 -1px;
+}
+.colums {
+    display: flex;
+    /*перенос блоков если не лезет в строку*/
+    flex-wrap: wrap;
+    /*блоки симетрично*/
+    justify-content: space-around;
+    border: yellow 1px solid;
+    margin: 0 -1px;
+}
+
+.item{
+    display: flex;
+    border: #1abc9c 1px solid;
+    margin: 3px;
+    flex-basis: 150px;
+    /*желаемий размер*/
+    align-items: flex-end;
+
+}
+
+.itemgrow{
+    flex-grow: 1;
+}

@@ -21,6 +21,7 @@ body {
 }
 .center-col {
     display: flex;
+    flex-di: flex;
     flex-direction: column;
 }
 
