@@ -115,9 +115,32 @@ header {
 }
 .contact{
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
+}
+form{
+   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
 }
 
+form input, textarea {
+    width: 40vw;
+    margin: 3px;
+    }
+
+.button_long{
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 30px auto;
+
+}
 
 
 

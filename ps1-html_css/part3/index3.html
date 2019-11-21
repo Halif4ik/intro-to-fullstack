@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--    <meta charset="utf-8">-->
     <title>Our awesome</title>
     <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy
     |Oxygen:300,400"
           rel="stylesheet">
-    <link rel="stylesheet" href="stylePart3.css">
+    <link rel="stylesheet" href="sPart3.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
           crossorigin="anonymous">
@@ -70,16 +71,70 @@
 </section>
 
 <section class="our_awesome contact">
+    <h2> Contact us!</h2>
+    <!--    begin forms-->
+    <form>
+        <input type="text" class="inputs" placeholder="Type here your name, place" pattern="^\w">
+        <input type="email" class="inputs" placeholder="Type here your email, place">
+        <input type="tel" class="inputs" placeholder="Type here your phone number, place">
+        <input type="password" name="pass" id="password" placeholder="Type here your password, please">
+        <textarea placeholder="Ask you question"  class="inputs" rows="5">  </textarea>
+        <!--        add all inputs--><br>
 
-        <h2> Contact us!</h2>
-    <form action="#" class="contact">
-        <input type="text" class="input" placeholder="Type here your name, place">
-        <input type="email" class="input" placeholder="Type here your email, place">
-        <input type="tel" class="input" placeholder="Type here your phone number, place">
-        <input type="text" class="input" placeholder="Ask you question">
-        <button type="button" class="button long">Send email!</button>
+
+        <label for="inputs">Would you like site?</label>
+        <input type="number" name="amount" id="inputs" placeholder="How many site would you like?"
+               pattern="^[0-9]+">
+
+
+        <section class="inputs">
+            <label for="doneness">How do you want your qukle</label>
+                        <span>Slow</span>
+            <input type="range" name="doneness" id="doneness" value="3" min="1" max="10">
+            <span>Well-Done</span>
+        </section>
+
+        <section class="inputs">
+            <span>What would you like?</span>
+            <input type="checkbox" id="web" value="web">
+            <label for="web">Web</label>
+            <input type="checkbox" id="mobile" value="mobile">
+            <label for="mobile">Mobile</label>
+            <input type="checkbox" id="hightload" value="hightload">
+            <label for="hightload">Hightload</label>
+        </section>
+
+
+        <div class="inputs">
+            <span>Would you like begin?</span>
+            <input type="radio" id="yes" name="start" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="start" value="no">
+            <label for="no">No</label>
+        </div>
+
+        <span>Would you like flow?</span>
+        <select id=flow name=flow>
+            <option value="web">web</option>
+            <option value="mobile">mobile</option>
+            <option value="hightload">hightload</option>
+        </select>
+
+        <label for="city">Ideal city to visit?</label>
+        <input type="text" list="cities" id="city" name="city">
+
+        <datalist id="cities">
+            <option value="New York City"></option>
+            <option value="Tokyo"></option>
+            <option value="Barcelona"></option>
+            <option value="Mexico City"></option>
+            <option value="Melbourne"></option>
+            <option value="Other"></option>
+        </datalist>
+        <!--        thats all inputs-->
+        <button type="button" class="button_long">Send email!</button>
+
     </form>
-
 </section>
 
 </body>
