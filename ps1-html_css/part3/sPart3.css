@@ -113,20 +113,18 @@ header {
     font-size: 20px;
     font-weight: bold;
 }
+/* override style class our_awesome */
 .contact{
-    display: flex;
     flex-direction: column;
 }
 form{
-   display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
     text-align: center;
+    width: 50vw;
+    margin: 3px;
 }
 
 form input, textarea {
-    width: 40vw;
+    width: 100%;
     margin: 3px;
     }
 
@@ -139,6 +137,16 @@ form input, textarea {
     border: 2px solid white;
     border-radius: 10px;
     margin: 30px auto;
+
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    text-align: center;
+    border: black 1px solid;
+    padding: 4px;
+    width: 100%;
 
 }
 
