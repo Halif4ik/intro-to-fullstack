@@ -13,7 +13,7 @@ header {
 }
 
 .logo__letter {
-    color: black; /* Красный цвет символов */
+    color: black;
     position: relative; /* Относительное позиционирование */
 
 }
@@ -129,7 +129,8 @@ form input, textarea {
     margin: 3px;
     }
 
-.button_long{
+#submitButton {
+    width: 30%;
     cursor: pointer;
     font-size: 18px;
     color: white;

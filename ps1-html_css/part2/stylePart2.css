@@ -11,7 +11,7 @@ html, body {
     background-color: #d35400;
 }
 
-.wraper{
+.wrapper{
     min-height: calc(100vh - 70px);
     display: flex;
     /*перенос блоков если не лезет в строку*/
@@ -24,7 +24,6 @@ html, body {
       }
 
 .col {
-    display: flex;
     border: #1abc9c 2px solid;
     /*fight for this size*/
     flex-basis: 32%;
@@ -33,7 +32,7 @@ html, body {
 }
 
 footer {
-    margin-top: 0px;
+    margin-top: 0;
     border: 2px solid black;
     height: 30px;
     display: flex;

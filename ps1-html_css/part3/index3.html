@@ -78,21 +78,19 @@
         <input type="email" placeholder="Type here your email, place">
         <input type="tel" placeholder="Type here your phone number, place">
         <input type="password" name="pass" id="password" placeholder="Type here your password, please">
-
         <textarea placeholder="Ask you question" class="inputs" rows="5"></textarea>
-        <button type="submit" class="button_long">Send email!</button>
+         <input type="submit" value="Send email!" id="submitButton">
         <!--        add all inputs--><br>
     </form>
-
+<!-- all another type inputs whats don't view in the example screenshot -->
     <form>
         <label for="box">Would you like site?</label>
         <input type="number" name="amount" id="box" placeholder="How many site would you like?"
                pattern="^[0-9]+">
 
-
         <div class="box">
             <label for="doneness">How do you want your quickly</label>
-                        <span>Slow</span>
+            <span>Slow</span>
             <input type="range" name="doneness" id="doneness" value="3" min="1" max="10">
             <span>Well-Done</span>
         </div>

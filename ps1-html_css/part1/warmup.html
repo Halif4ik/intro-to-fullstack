@@ -8,29 +8,29 @@
     <style media="screen">
         body {
             margin: 0;
+            font-family: Helvetica, sans-serif;
         }
 
         * {
             box-sizing: border-box;
         }
-
         .column {
             font-size: 4rem;
             color: white;
             font-weight: bold;
-            font-family: Helvetica;
             text-align: center;
             padding: 1rem;
         }
 
         .floats .column {
-            float: right;
+            float: left;
             width: 33.33%;
         }
 
         .blocks .column {
             display: inline-block;
-            width: 33.33%
+            width: 33.33%;
+            margin-right: -4px;
         }
 
         .flexbox {
@@ -38,7 +38,7 @@
             flex-direction: row;
         }
 
-        .flexbox.column {
+        .flexbox, .column {
             flex-grow: 1;
         }
 
@@ -57,12 +57,9 @@
     <div class="column" style="background-color: #3498db">3</div>
 </section>
 <section class="blocks">
-
-    <div class="column" style="background-color: #f39c12">1</div><!--
-    -->
-    <div class="column" style="background-color: #d35400">2</div><!--
-    -->
-    <div class="column" style="background-color: #c0392b">3</div>
+    <div class="column" style="background-color: #f39c12">1</div> <!--    -->
+    <div class="column" style="background-color: #d35400">2</div> <!--    -->
+    <div class="column" style="background-color: #c0392b">3</div> <!--    -->
 </section>
 <section class="flexbox">
     <div class="column" style="background-color: #16a085">1</div>
