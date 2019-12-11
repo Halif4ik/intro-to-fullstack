@@ -11,7 +11,7 @@ html, body {
     background-color: #d35400;
 }
 
-.wraper{
+.wrapper{
     min-height: calc(100vh - 70px);
     display: flex;
     /*перенос блоков если не лезет в строку*/
