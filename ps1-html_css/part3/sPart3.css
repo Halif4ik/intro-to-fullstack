@@ -9,7 +9,7 @@ header {
     font-size: 60px;
     font-weight: 700;
     color: #1abc9c;
-    margin:  3% 8%;
+    margin:  1% 8%;
 }
 
 .logo__letter {
@@ -35,7 +35,7 @@ header {
 }
 /*      */
 .nav__link:hover{
-    color: red;
+    color: #2ecc71;
 }
 
 .our_awesome{
@@ -73,7 +73,7 @@ header {
     background: #1abc9c;
 }
 .button:hover{
-    background: #2ecc71;
+    background: red;
 }
 /* about us*/
 .about{
