@@ -11,7 +11,6 @@ document.getElementById("btn1").addEventListener('click',()=>{
 
     const multipleOfTwo = intNumb => ( Math.abs(intNumb) % 10 === 2 ||
         Math.abs(intNumb) % 10 === 3 ||  Math.abs(intNumb) % 10 === 7 );
-    ;
 
     if(startNumb > endNumb)  [startNumb,endNumb] = [endNumb, startNumb];
 
@@ -36,8 +35,15 @@ document.getElementById("btn2_1").addEventListener('click',()=>{
   const prepeareResult = oneNumber =>  oneNumber.toString().length >1  ? `${oneNumber}` : `0${oneNumber}`;
 
     document.getElementById('hh:mm:ss').innerText = prepeareResult(hour)+':'+ prepeareResult(min)+':'+prepeareResult(second);
-    console.log( prepeareResult(hour)+':'+ prepeareResult(min)+':'+prepeareResult(second));
-}  );
+    }  );
+
+document.getElementById("btn2_2").addEventListener('click',()=>{
+    let timeInHHMMSS = document.getElementById('timeHhMmSS').value;
+        const parsTime = timeInHHMMSS.split(':');
+let result= parseInt(parsTime[0]*SECOND_IN_HOUR) + parseInt(parsTime[1]*SECOND_IN_MINUTE)+
+    parseInt(parsTime[2]);
+    document.getElementById('result2_2').innerText = result;
+    }  );
 
 const SECOND_IN_HOUR =3600;
 const SECOND_IN_MINUTE =60;

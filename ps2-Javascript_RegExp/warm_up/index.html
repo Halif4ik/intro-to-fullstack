@@ -17,9 +17,10 @@
 <section class="page">
   <!--TASK 1 Sum numbers ends 2,3,7 -->
   <form class="form">
-    <h3 class="form_head">1. Дана форма с двумя числовыми инпутами.
+    <label class="form_head" for="radio"> 1. Дана форма с двумя числовыми инпутами.
       Посчитать сумму чисел в промежутке между введеными пользователем (например от 1 до 7),
-      суммируя только числа которые заканчиваются на 2,3, и 7</h3>
+      суммируя только числа которые заканчиваются на 2,3, и 7</label>
+    <input class="form_head_input" type="radio" id="radio" >
     <div class="form_wrapper">
       <input class="form_input" type="number" id="elem1" value="-100">
       <input class="form_input" type="number" id="elem2" value="100">
@@ -29,15 +30,19 @@
   </form>
   <!--TASK 2 Date -->
   <form class="form">
-    <h3 class="form_head">2) Пользователь вводит время в секундах. Вывести в формате: hh:mm:ss
-      (01:05:20). Ниже наоборот: пользователь вводит время в формате hh:mm:ss, вывести количество секунд.</h3>
+    <label class="form_head" for = "radio2">2) Пользователь вводит время в секундах. Вывести в формате: hh:mm:ss
+      (01:05:20). Ниже наоборот: пользователь вводит время в формате hh:mm:ss,
+      вывести количество секунд.</label>
+    <input class="form_head_input" type="radio" id="radio2" >
     <div class="form_wrapper">
       <input class="form_input" type="number"  id="seconds" placeholder="enter time in second">
       <button class="btn" type="button" id="btn2_1">Calculate</button>
       <output class="label" id="hh:mm:ss">result</output>
-      <input class="form_input" type="number"  id="time" placeholder="enter time in hh:mm:ss" title="please enter correct hh:mm:ss">
+      <!--part 2 TASK 2 Date -->
+      <input class="form_input" type="time"  id="timeHhMmSS" value="00:00:00"
+             title="please enter correct hh:mm:ss">
       <button class="btn" type="button" id="btn2_2">Calculate</button>
-      <output class="label" id="result2">result</output>
+      <output class="label" id="result2_2">result</output>
     </div>
   </form>
 
