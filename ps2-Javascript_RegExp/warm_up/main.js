@@ -40,9 +40,10 @@ document.getElementById("btn2_1").addEventListener('click',()=>{
 document.getElementById("btn2_2").addEventListener('click',()=>{
     let timeInHHMMSS = document.getElementById('timeHhMmSS').value;
         const parsTime = timeInHHMMSS.split(':');
-let result= parseInt(parsTime[0]*SECOND_IN_HOUR) + parseInt(parsTime[1]*SECOND_IN_MINUTE)+
-    parseInt(parsTime[2]);
-    document.getElementById('result2_2').innerText = result;
+    const hhMmSs = parsTime => parseInt(parsTime[0]*SECOND_IN_HOUR) +
+        parseInt(parsTime[1]*SECOND_IN_MINUTE)+ parseInt(parsTime[2]);
+
+    return document.getElementById('result2_2').innerText = hhMmSs(parsTime);
     }  );
 
 const SECOND_IN_HOUR =3600;

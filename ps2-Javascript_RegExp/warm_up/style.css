@@ -16,7 +16,7 @@ header {
   /*перенос блоков если не лезет в строку*/
   flex-wrap: wrap;
   /*заполнение блока семитрично 3-мя колонками*/
-  justify-content: space-around;
+  flex-direction: column;
   background-color: #A0EBDC;
   padding: 5px;
   font-family: 'Oxygen', sans-serif;
