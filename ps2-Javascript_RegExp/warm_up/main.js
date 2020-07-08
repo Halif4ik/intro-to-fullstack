@@ -26,15 +26,26 @@ document.getElementById("btn1").addEventListener('click',()=>{
 
 document.getElementById("btn2_1").addEventListener('click',()=>{
     let timeInSecond = parseInt(document.getElementById('seconds').value);
+    let arrHours = [];
 
-  let hour = Math.round(timeInSecond / SECOND_IN_HOUR);
+    arrHours.push(Math.round(timeInSecond / SECOND_IN_HOUR));
+        //3661 % 3600 = 61
   timeInSecond = timeInSecond % SECOND_IN_HOUR;
-  let min = Math.round(timeInSecond / SECOND_IN_MINUTE);
-  let second = timeInSecond % SECOND_IN_MINUTE;
+        // 61 / 60 = 1
+    arrHours.push (Math.round(timeInSecond / SECOND_IN_MINUTE));
+    // push last element
+    arrHours.push( timeInSecond % SECOND_IN_MINUTE);
+    //
+    for (let i = 0; i <arrHours.length; i++)  arrHours[i] =  arrHours[i] || "--";
 
-  const prepeareResult = oneNumber =>  oneNumber.toString().length >1  ? `${oneNumber}` : `0${oneNumber}`;
 
-    document.getElementById('hh:mm:ss').innerText = prepeareResult(hour)+':'+ prepeareResult(min)+':'+prepeareResult(second);
+    const prepeareResult = oneNumber =>  oneNumber.toString().length > 1  ? `${oneNumber}` : `0${oneNumber}`;
+    let result =prepeareResult(arrHours[0])+':'+ prepeareResult(arrHours[1])+':'+prepeareResult(arrHours[2])
+
+
+
+    document.getElementById('hh:mm:ss').innerText = result;
+
     }  );
 
 document.getElementById("btn2_2").addEventListener('click',()=>{
