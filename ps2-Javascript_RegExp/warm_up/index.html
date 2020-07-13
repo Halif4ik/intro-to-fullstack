@@ -30,10 +30,10 @@
   </form>
   <!--TASK 2 Date -->
   <form class="form">
-    <label class="form_head" for = "radio2">2) Пользователь вводит время в секундах. Вывести в формате: hh:mm:ss
+    <label class="form_head" for = "radioTask2">2) Пользователь вводит время в секундах. Вывести в формате: hh:mm:ss
       (01:05:20). Ниже наоборот: пользователь вводит время в формате hh:mm:ss,
       вывести количество секунд.</label>
-    <input class="form_head_input" type="radio" id="radio2" >
+    <input class="form_head_input" type="radio" id="radioTask2">
     <div class="form_wrapper">
       <input class="form_input" type="number"  id="seconds" placeholder="enter time in second">
       <button class="btn" type="button" id="btn2_1">Calculate</button>
@@ -44,7 +44,20 @@
       <button class="btn" type="button" id="btn2_2">Calculate</button>
       <output class="label" id="result2_2">result</output>
     </div>
-  </form>
+    </form>
+    <!--TASK 3 Date -->
+    <form class="form">
+      <label class="form_head" for = "radioTask3">3) Даны два input[type=datetime-local]. Вычислить промежуток
+        времени прошедший между датами и вывести пользователю сообщение типа: 2 year(s), 1 month(s), 3 day(s),
+        5 hour(s), 10 minute(s), 15 second(s).</label>
+      <input class="form_head_input" type="radio" id="radioTask3">
+      <div class="form_wrapper">
+        <input class="form_input" type="datetime-local"  id="datetimeStart">
+        <input class="form_input" type="datetime-local"  id="datetimeEnd">
+        <button class="btn" type="button" id="btn3">Calculate</button>
+        <output class="label" id="yearMonth">result</output>
+      </div>
+    </form>
 
 
 </section>

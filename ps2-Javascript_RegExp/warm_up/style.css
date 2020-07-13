@@ -39,6 +39,7 @@ header {
 }
 .form_head:hover{
   background-color: #e74c3c;
+  color: bisque;
 }
 .form_head_input:checked + .form_wrapper{
   display: block;
